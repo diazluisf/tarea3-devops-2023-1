@@ -10,7 +10,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
-class TestTestTarea3Creaciondirectoresypeliculas():
+class TestTarea3Creaciondirectoresypeliculas():
   def setup_method(self, method):
     self.driver = webdriver.Chrome()
     self.vars = {}
@@ -18,7 +18,7 @@ class TestTestTarea3Creaciondirectoresypeliculas():
   def teardown_method(self, method):
     self.driver.quit()
   
-  def test_testTarea3Creaciondirectoresypeliculas(self):
+  def test_Tarea3Creaciondirectoresypeliculas(self):
     self.driver.get("http://localhost:8001/")
     self.driver.set_window_size(1296, 1400)
     self.driver.find_element(By.ID, ":r1:-tab-1").click()
